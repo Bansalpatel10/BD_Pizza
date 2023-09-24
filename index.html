@@ -1,0 +1,537 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BD Pizza</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+
+            <!-- navbar -->
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Category</a></li>
+                <li><a href="#food-menu">Menu</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <h1 class="logo">BD Pizza</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+
+            <!-- ad on hedings -->
+            <h1 class="main-title" id="home">Eat Right Food</h1>
+            <p>Eat Healthy, it is good for our health.</p>
+            <select onchange="showOutletNew(this,5)" class="browser-default-custom-select">
+                <option value="" selected="" disabled="" hidden="" >Select Your City</option>
+                                                    <option value="Agra">Agra</option>
+                                                    <option value="Ahmedabad">Ahmedabad</option>
+                                                    <option value="Ajmer">Ajmer</option>
+                                                    <option value="Ambala City">Ambala City</option>
+                                                    <option value="Amreli">Amreli</option>
+                                                    <option value="Amritsar">Amritsar</option>
+                                                    <option value="Anand">Anand</option>
+                                                    <option value="Ankleshwar">Ankleshwar</option>
+                                                    <option value="Ayodhya">Ayodhya</option>
+                                                    <option value="Azamgarh">Azamgarh</option>
+                                                    <option value="Baddi">Baddi</option>
+                                                    <option value="Bahadurgarh">Bahadurgarh</option>
+                                                    <option value="Bahraich">Bahraich</option>
+                                                    <option value="Bardoli">Bardoli</option>
+                                                    <option value="Basti">Basti</option>
+                                                    <option value="Batala">Batala</option>
+                                                    <option value="Bathinda">Bathinda</option>
+                                                    <option value="Beawar">Beawar</option>
+                                                    <option value="Bengaluru">Bengaluru</option>
+                                                    <option value="Bettiah">Bettiah</option>
+                                                    <option value="Bhagalpur">Bhagalpur</option>
+                                                    <option value="Bharuch">Bharuch</option>
+                                                    <option value="Bhavnagar">Bhavnagar</option>
+                                                    <option value="Bhilai">Bhilai</option>
+                                                    <option value="Bhilwara">Bhilwara</option>
+                                                    <option value="Bhopal">Bhopal</option>
+                                                    <option value="Bhubaneswar">Bhubaneswar</option>
+                                                    <option value="Bhuj">Bhuj</option>
+                                                    <option value="Bikaner">Bikaner</option>
+                                                    <option value="Bilaspur">Bilaspur</option>
+                                                    <option value="Bilimora">Bilimora</option>
+                                                    <option value="Bokaro">Bokaro</option>
+                                                    <option value="Borsad">Borsad</option>
+                                                    <option value="Botad">Botad</option>
+                                                    <option value="Budaun">Budaun</option>
+                                                    <option value="Chandigarh">Chandigarh</option>
+                                                    <option value="Chennai">Chennai</option>
+                                                    <option value="Chikhli">Chikhli</option>
+                                                    <option value="Dahod">Dahod</option>
+                                                    <option value="Daman">Daman</option>
+                                                    <option value="Dasuya">Dasuya</option>
+                                                    <option value="Deesa">Deesa</option>
+                                                    <option value="Dehradun">Dehradun</option>
+                                                    <option value="Dehri">Dehri</option>
+                                                    <option value="Delhi">Delhi</option>
+                                                    <option value="deoria">deoria</option>
+                                                    <option value="Derabassi">Derabassi</option>
+                                                    <option value="Dewas">Dewas</option>
+                                                    <option value="DHARAMSHALA">DHARAMSHALA</option>
+                                                    <option value="Durg">Durg</option>
+                                                    <option value="Dwarka Gujarat">Dwarka Gujarat</option>
+                                                    <option value="Faridabad">Faridabad</option>
+                                                    <option value="Fatehgarh Sahib">Fatehgarh Sahib</option>
+                                                    <option value="Ferozepur">Ferozepur</option>
+                                                    <option value="Gandhidham">Gandhidham</option>
+                                                    <option value="Gandhinagar">Gandhinagar</option>
+                                                    <option value="Ghaziabad">Ghaziabad</option>
+                                                    <option value="Goa">Goa</option>
+                                                    <option value="Godhra">Godhra</option>
+                                                    <option value="Gondal">Gondal</option>
+                                                    <option value="Gondia">Gondia</option>
+                                                    <option value="Gorakhpur">Gorakhpur</option>
+                                                    <option value="Greater Noida">Greater Noida</option>
+                                                    <option value="Gurdaspur">Gurdaspur</option>
+                                                    <option value="Gurgaon">Gurgaon</option>
+                                                    <option value="Guwahati">Guwahati</option>
+                                                    <option value="Gwalior">Gwalior</option>
+                                                    <option value="Haldwani">Haldwani</option>
+                                                    <option value="Halol">Halol</option>
+                                                    <option value="Halvad">Halvad</option>
+                                                    <option value="Himatnagar">Himatnagar</option>
+                                                    <option value="Hisar">Hisar</option>
+                                                    <option value="Hoshiarpur">Hoshiarpur</option>
+                                                    <option value="Hyderabad">Hyderabad</option>
+                                                    <option value="Indore">Indore</option>
+                                                    <option value="Jabalpur">Jabalpur</option>
+                                                    <option value="Jagraon">Jagraon</option>
+                                                    <option value="Jaipur">Jaipur</option>
+                                                    <option value="Jalandhar">Jalandhar</option>
+                                                    <option value="Jalgaon">Jalgaon</option>
+                                                    <option value="Jammu">Jammu</option>
+                                                    <option value="Jamnagar">Jamnagar</option>
+                                                    <option value="Jamshedpur">Jamshedpur</option>
+                                                    <option value="Jaunpur">Jaunpur</option>
+                                                    <option value="Jetpur">Jetpur</option>
+                                                    <option value="Jhansi">Jhansi</option>
+                                                    <option value="Jodhpur">Jodhpur</option>
+                                                    <option value="Junagadh">Junagadh</option>
+                                                    <option value="Kadi">Kadi</option>
+                                                    <option value="Kakinada">Kakinada</option>
+                                                    <option value="Kalol">Kalol</option>
+                                                    <option value="Kanpur">Kanpur</option>
+                                                    <option value="Karjan">Karjan</option>
+                                                    <option value="Karnal">Karnal</option>
+                                                    <option value="Kasol">Kasol</option>
+                                                    <option value="Kathua">Kathua</option>
+                                                    <option value="Katra">Katra</option>
+                                                    <option value="Khanna">Khanna</option>
+                                                    <option value="Kharar">Kharar</option>
+                                                    <option value="Kishanagarh">Kishanagarh</option>
+                                                    <option value="Kochi">Kochi</option>
+                                                    <option value="Kolhapur">Kolhapur</option>
+                                                    <option value="Kolkata">Kolkata</option>
+                                                    <option value="Kollam">Kollam</option>
+                                                    <option value="Kota">Kota</option>
+                                                    <option value="Kurali">Kurali</option>
+                                                    <option value="Lucknow">Lucknow</option>
+                                                    <option value="Ludhiana">Ludhiana</option>
+                                                    <option value="Maharajganj">Maharajganj</option>
+                                                    <option value="Mahuva">Mahuva</option>
+                                                    <option value="Malout">Malout</option>
+                                                    <option value="Manali">Manali</option>
+                                                    <option value="Mandi">Mandi</option>
+                                                    <option value="Mandi Gobindgarh">Mandi Gobindgarh</option>
+                                                    <option value="Mangalore">Mangalore</option>
+                                                    <option value="Meerut">Meerut</option>
+                                                    <option value="Mehsana">Mehsana</option>
+                                                    <option value="Mhow">Mhow</option>
+                                                    <option value="Modasa">Modasa</option>
+                                                    <option value="Moga">Moga</option>
+                                                    <option value="Mohali">Mohali</option>
+                                                    <option value="Moradabad">Moradabad</option>
+                                                    <option value="Morbi">Morbi</option>
+                                                    <option value="Mount Abu">Mount Abu</option>
+                                                    <option value="Mukerian">Mukerian</option>
+                                                    <option value="Muktsar">Muktsar</option>
+                                                    <option value="Mumbai">Mumbai</option>
+                                                    <option value="Mussoorie">Mussoorie</option>
+                                                    <option value="Muzaffarpur">Muzaffarpur</option>
+                                                    <option value="Nabha">Nabha</option>
+                                                    <option value="Nadiad">Nadiad</option>
+                                                    <option value="Nagpur">Nagpur</option>
+                                                    <option value="Narmada">Narmada</option>
+                                                    <option value="Nashik">Nashik</option>
+                                                    <option value="Nathdwara">Nathdwara</option>
+                                                    <option value="Navi Mumbai">Navi Mumbai</option>
+                                                    <option value="Navsari">Navsari</option>
+                                                    <option value="Nawanshahr">Nawanshahr</option>
+                                                    <option value="New Chandigarh">New Chandigarh</option>
+                                                    <option value="Noida">Noida</option>
+                                                    <option value="Palanpur">Palanpur</option>
+                                                    <option value="Pali">Pali</option>
+                                                    <option value="Panchkula">Panchkula</option>
+                                                    <option value="Panipat">Panipat</option>
+                                                    <option value="Patan Gujarat">Patan Gujarat</option>
+                                                    <option value="Pathankot">Pathankot</option>
+                                                    <option value="Patiala">Patiala</option>
+                                                    <option value="Patna">Patna</option>
+                                                    <option value="perambalur">perambalur</option>
+                                                    <option value="Petlad">Petlad</option>
+                                                    <option value="Pinjore">Pinjore</option>
+                                                    <option value="Porbandar">Porbandar</option>
+                                                    <option value="Prayagraj">Prayagraj</option>
+                                                    <option value="Pune">Pune</option>
+                                                    <option value="Pushkar">Pushkar</option>
+                                                    <option value="Raebareli">Raebareli</option>
+                                                    <option value="Raipur">Raipur</option>
+                                                    <option value="Rajkot">Rajkot</option>
+                                                    <option value="Rajpura">Rajpura</option>
+                                                    <option value="Ranchi">Ranchi</option>
+                                                    <option value="Ratlam">Ratlam</option>
+                                                    <option value="Rewa">Rewa</option>
+                                                    <option value="Rudrapur">Rudrapur</option>
+                                                    <option value="Rupnagar">Rupnagar</option>
+                                                    <option value="Sangrur">Sangrur</option>
+                                                    <option value="Saputara">Saputara</option>
+                                                    <option value="Sasaram">Sasaram</option>
+                                                    <option value="Satna">Satna</option>
+                                                    <option value="Secundrabad">Secundrabad</option>
+                                                    <option value="Shirdi">Shirdi</option>
+                                                    <option value="Sikar">Sikar</option>
+                                                    <option value="Siliguri">Siliguri</option>
+                                                    <option value="Silvassa">Silvassa</option>
+                                                    <option value="Sirsi">Sirsi</option>
+                                                    <option value="Sitapur">Sitapur</option>
+                                                    <option value="Solan">Solan</option>
+                                                    <option value="Solapur">Solapur</option>
+                                                    <option value="Sultanpur">Sultanpur</option>
+                                                    <option value="Sundernagar">Sundernagar</option>
+                                                    <option value="Surat">Surat</option>
+                                                    <option value="Surendranagar">Surendranagar</option>
+                                                    <option value="Udaipur">Udaipur</option>
+                                                    <option value="Ujjain">Ujjain</option>
+                                                    <option value="Vadodara">Vadodara</option>
+                                                    <option value="Valsad">Valsad</option>
+                                                    <option value="Vapi">Vapi</option>
+                                                    <option value="Varanasi">Varanasi</option>
+                                                    <option value="Veraval">Veraval</option>
+                                                    <option value="Vijayawada">Vijayawada</option>
+                                                    <option value="Visnagar">Visnagar</option>
+                                                    <option value="Vyara">Vyara</option>
+                                                    <option value="Yamunanagar">Yamunanagar</option>
+                                                    <option value="Zirakpur">Zirakpur</option>
+                                            </select>
+            <a href="#food-menu" class="btn btn-primary">Menu</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>We've beem making healthy food last for 10 years</h2>
+
+                <!-- about us -->
+                <p class="common-para" style="text-align: justify;">
+                    The story of India's fastest growing pizza place started back in 2013 when
+                    Bansal Manavadariya and Daksh Mangukiya opened his very first pizzeria in his hometown Surat.
+                    Inspired by his own search for delicious pizza options, he started to wonder if there was a
+                    better way of doing pizza – and business. The last thing the world needed was another pizzeria,
+                    but maybe this one could be different and everyone could get exactly what they wanted, made
+                    fresh on demand. It all started sounding pretty great, and soon Both was opening the first
+                    BD Pizza in his hometown Surat and there was no looking back. As of today, BD Pizza has
+                    100+ outlets across India.
+                </p>
+            </div>
+
+            <!-- about us img(pizza photo) -->
+            <div class="about-img">
+                <img src="owner.jpg" alt="food" />
+            </div>
+        </div>
+    </section>
+    <section id="food">
+
+        <!-- type food 3-pizza -->
+        <h2>Types of food</h2>
+        <div class="food-container container">
+            <div class="food-type pizza">
+                <div class="img-container">
+                    <img src="type of  menu1.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>Pizza</h3>
+                        <a href="https://en.wikipedia.org/wiki/Pizza" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- type food 2-pasta -->
+            <div class="food-type pasta">
+                <div class="img-container">
+                    <img src="type of  menu2.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>Pasta</h3>
+                        <a href="https://en.wikipedia.org/wiki/pasta" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- type food 3-garlicbread -->
+            <div class="food-type garlicbread">
+                <div class="img-container">
+                    <img src="type of  menu3.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>Garlicbread</h3>
+                        <a href="https://en.wikipedia.org/wiki/garlicbread" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- food menu -->
+    <section id="food-menu">
+        <h2 class="food-menu-heading">Food Menu</h2>
+
+        <!-- Margerita Pizza -->
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="margerita.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Margerita Pizza</h2>
+                    <p>A classic cheesy Margherita.
+                    </p>
+                    <p class="food-price">Price: &#8377; 135</p>
+                </div>
+            </div>
+
+            <!-- Lover Bite Pizza -->
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="lover bite pizza.jpg" alt="error" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Lover Bite Pizza</h2>
+                    <p>A wholesome combination
+                        of tossed mushrooms, olives and juicy sweet co
+                    </p>
+                    <p class="food-price">Price: &#8377; 185</p>
+                </div>
+            </div>
+
+            <!-- Korma Panner Pizza -->
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="korma panner pizza.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Korma Panner Pizza</h2>
+                    <p class="heading-customize ">Onion, Sweet Corns, Paneer, Jalapenos in Korma Dip</p>
+                    <p class="food-price">Price: &#8377; 255</p>
+                </div>
+            </div>
+            
+            <!-- Plain Garlicbread -->
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="plain gralicbread.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Plain Garlicbread</h2>
+                    <p class="heading-customize less1666613">
+                        | 1 Pc ||The quintessential garlic bread side for your pizza.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+
+            <!-- Chessy Garlicbread -->
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="chessy garlicbread.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Chessy Garlicbread</h2>
+                    <p class="heading-customize less1666610">
+                        | 1 Pc || Garlic bread baked to perfection with cheese.
+                    </p>
+                    <p class="food-price">Price: &#8377; 75</p>
+                </div>
+            </div>
+
+            <!-- Maxican Pasta -->
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="mexican pasta.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Maxican Pasta</h2>
+                    <p class="heading-customize less1666589">
+                        Exotic red sauce with onion, capsicum, mushroom, olives and cheese.
+                    </p>
+                    <p class="food-price">Price: &#8377; 170</p>
+                </div>
+            </div>
+
+            <!-- American White Shous Pasta -->
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="american white shous pasta.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">American White Shous Pasta</h2>
+                    <p class="heading-customize less1666590">
+                        A blend of American Flavours in your Favorite Pasta Onion, capsicum.
+                    </p>
+                    <p class="food-price">Price: &#8377; 175</p>
+                </div>
+            </div>
+
+            <!-- choco lava cake -->
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="choko lava cake.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Choco Lava Cake</h2>
+                    <p class="heading-customize ">
+                        Small muffin infused with warm chocolate! Vintage Dessert
+                    </p>
+                    <p class="food-price">Price: &#8377; 115</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2 class="testimonial-title">What Our Customers Say</h2>
+
+        <!-- customer 3 review -->
+        <div class="testimonial-container container">
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="customer1.jpg" alt="" />
+                        <p class="customer-name">Dev Mehta</p>
+                    </div>
+                </div>
+
+                <!-- customer 3 review -->
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Best pizza and good prices eat in or take out, pizza is full of toppings and they make a
+                    huge pizza that feeds may people
+                </p>
+
+            </div>
+
+            <!-- customer 2 review -->
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="customer2.jpg" alt="" />
+                        <p class="customer-name">Jay Goti</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Great place to get pizza... Use them all the time. Have been a customer for about 8 years,
+                    very close to our home and easy access.
+                </p>
+
+            </div>
+            <!-- customer 3 review -->
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="customer3.jpg" alt="" />
+                        <p class="customer-name">Dhruv Ghiniya</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Pizza was surprisingly good and prices are great. Pizzas, calzones, strombolis,
+                    subs, appetizers, and a few desserts
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <!-- logo -->
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="BD Pizza Logo.png" alt="error" />
+            </div>
+
+            <!-- contact us(informaction of customber) -->
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="E-Mail" />
+                <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+                <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us( our number and mail) -->
+    <footer id="footer">
+        <div class="contact">
+            <h3>Contact Us</h3>
+            9954187510 <br>
+            <p id="gmail"><a href="#"> bdpizza@gmail.com </a></p>
+
+            <br>
+        </div>
+        <h2>Restraunt &copy; all rights reserved</h2>
+    </footer>
+
+    <!-- .................../ JS Code for smooth scrolling /...................... -->
+    <!-- <script src="js.js"></script> -->
+
+</html>
+
+</body>
+
+</html>
